@@ -1,0 +1,7 @@
+gp_negative_precision,gp_negative_recall,gp_negative_f1,model,threshold_type,threshold
+0.4841,0.1603,0.2408,logistic_l1_full,decline_optimised,0.33
+0.5955,0.8293,0.6932,logistic_l1_full,safe_optimised,0.54
+0.708,0.2125,0.3268,rf_full,decline_optimised,0.36
+0.5937,0.9476,0.73,rf_full,safe_optimised,0.6
+0.7764,0.1316,0.225,xgb_full,decline_optimised,0.23
+0.5751,0.9624,0.72,xgb_full,safe_optimised,0.73

@@ -1,0 +1,28 @@
+# Python environment
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Raw / confidential Awin data — never commit
+Data/
+Publisher.xlsx
+PublisherData/
+processed/
+
+# Internal Awin DB schema/query logic — not needed for the dissertation artefact
+*.sql
+SQL Code/
+
+# Regenerable outputs — recreated by re-running the notebooks
+outputs/
+eda_outputs/
+eda_jan25/
+
+# Superseded / working material — kept locally for audit trail, not part of the tracked deliverable
+Archive/
+Master files/
+
+# OS clutter
+.DS_Store
+Thumbs.db

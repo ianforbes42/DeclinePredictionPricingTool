@@ -1,0 +1,2 @@
+model,directional_accuracy,actual_loss_capture,spearman_rank_correlation,mae_among_decliners,mae_whole_book
+severity_on_gp_tuned_flagged_population,0.5918,0.4529,0.0788,0.4406,0.6337

@@ -1,0 +1,7 @@
+model,directional_accuracy,actual_loss_capture,spearman_rank_correlation,mae_among_decliners,mae_whole_book
+naive_zero_change,0.0,0.0,,0.4816,0.6659
+naive_mean_change,0.4335,0.0,,0.6073,0.692
+modelA_lasso,0.5589,0.341,0.2329,0.5786,0.6652
+modelA_rf,0.5627,0.1318,0.2779,0.5634,0.6518
+modelA_xgb,0.5857,0.1834,0.2955,0.5519,0.6526
+modelB_hurdle_rf,0.3264,0.3261,0.2251,0.3917,0.6427

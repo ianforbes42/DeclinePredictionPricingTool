@@ -1,0 +1,41 @@
+feature,perm_importance_mean,perm_importance_std,rfm_dimension
+momentum_3m_yoy,0.05086378982387465,0.04100203444358472,momentum (recency/frequency)
+pub_share_mid_2024,0.022728649821635527,0.010466630277500832,publisher (engagement breadth)
+accel_q2_to_q1,0.02241633759828654,0.018656431522711504,momentum (recency/frequency)
+pub_lower_funnel_shift_yoy,0.009438439274920541,0.004592686083976261,publisher (engagement breadth)
+pub_share_upper_2024,0.00847006525320106,0.005231552475105014,publisher (engagement breadth)
+negative_growth_months_l12m,0.005179070289781223,0.011410450163475716,momentum (recency/frequency)
+commission_cv_l12m,0.0044385079014218065,0.005065651809096124,momentum (recency/frequency)
+pub_share_technical_2024,0.003894928820681004,0.00556982959475727,publisher (engagement breadth)
+fixed_fee_share_mean_l12m,0.0033834503842327,0.0022127996058499905,firmographic/commercial
+pub_upper_funnel_shift_yoy,0.002858316691177987,0.0036354870481787754,publisher (engagement breadth)
+is_exclusive,0.0017008173416612148,0.001353652682010865,firmographic/commercial
+programme_count,0.0014714780828574137,0.0002448326738938835,firmographic/commercial
+pub_mid_funnel_shift_yoy,0.00046211622550505483,0.007943051983409813,publisher (engagement breadth)
+momentum_q2_yoy,0.0003945793870265113,0.009344791558111102,momentum (recency/frequency)
+momentum_q4_yoy_missing,0.00021049735638644095,0.0016196828911836812,momentum (recency/frequency)
+momentum_3m_yoy_missing,0.0,0.0,momentum (recency/frequency)
+partially_closed_last_12m,0.0,0.0,firmographic/commercial
+has_cpi_flag,-7.0214939672352815e-06,0.0004638392739333734,firmographic/commercial
+momentum_q2_yoy_missing,-0.00016715891726616362,0.0005111972613475845,momentum (recency/frequency)
+momentum_q3_yoy_missing,-0.0003156524131243066,0.0007773390693016129,momentum (recency/frequency)
+active_months_l12m,-0.0009173594778284999,0.0014767912580914994,firmographic/commercial
+has_pub_data,-0.0009407155251545063,0.0011435056747191408,publisher (engagement breadth)
+pub_funnel_diversity,-0.0011386742454501607,0.002452379328779046,publisher (engagement breadth)
+zero_commission_months,-0.0011722158823797846,0.0018092965179964124,firmographic/commercial
+former_sas_flag,-0.0011914304101780238,0.0010186989264956818,firmographic/commercial
+accel_q3_to_q2,-0.0017745251834786091,0.007903237320516288,momentum (recency/frequency)
+etr_mean_l12m,-0.0022135464457501476,0.0027500328488369,firmographic/commercial
+consecutive_declining_months,-0.00239358965205666,0.015042905037022096,momentum (recency/frequency)
+commission_size_tier_code,-0.0035021155709585583,0.0014484310886001214,firmographic/commercial
+platform_rank,-0.003524567684891505,0.001980500120199288,firmographic/commercial
+momentum_q4_yoy,-0.0038627539659780996,0.0030637412730216544,momentum (recency/frequency)
+service_rank,-0.0038717492230279814,0.003047334608413703,firmographic/commercial
+momentum_q3_yoy,-0.004440286441626512,0.0026095967878248783,momentum (recency/frequency)
+accel_q4_to_q3,-0.0049493845794702455,0.008488975986339116,momentum (recency/frequency)
+programme_age_months,-0.006205334433318754,0.004145596367070728,firmographic/commercial
+pub_share_lower_2024,-0.007367226080728406,0.00615268250865984,publisher (engagement breadth)
+log_commission_l12m,-0.008058942941905633,0.0037812007508436054,firmographic/commercial
+worsening_negative_trend,-0.008837353365623246,0.018378104615255228,momentum (recency/frequency)
+recent_reversal_to_decline,-0.015975448389005914,0.008496449812710787,momentum (recency/frequency)
+log_core_gp_l12m,-0.016745137951694872,0.0037205562257493965,firmographic/commercial
