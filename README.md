@@ -21,19 +21,17 @@ The final artefact is the set of five notebooks below. The pricing model is the 
 
 ## Notebook order
 
-For following the analysis, I would read the notebooks in this order:
+The notebooks are numbered in analytical order and can be read straight through:
 
-**01 → 02 → 03 → 05 → 04**
-
-The numbering is slightly different from the final analytical order because Notebook 05 was added after an earlier version of the pricing model had already been built. It was used to compare different pricing curves, and the selected curve was then carried back into the final version of Notebook 04.
+**01 → 02 → 03 → 04 → 05**
 
 | Notebook | What it does |
 |---|---|
 | `01_Dataset_Creation_Final.ipynb` | Builds the monthly observation panel and the January 2025 modelling snapshot from transaction, advertiser, fixed-fee and publisher data. It also creates the forward 12-month target and the momentum, commercial and publisher features used later. |
 | `02_Classification_Model_Final.ipynb` | Tests whether future commission decline can be predicted. It compares the existing 12-month YoY rule with Logistic Regression, Random Forest and XGBoost, then compares the full feature set with a much simpler three-month momentum model. It also includes GP-weighted metrics, SHAP, permutation importance and sensitivity checks. |
 | `03_Severity_Model_Final.ipynb` | Tests whether the size of the future commission movement can be predicted. It compares direct regression with a two-stage classify-then-size approach. The main finding is that individual severity predictions are too noisy to use confidently in pricing, although the average outcome becomes much clearer when clients are grouped by classification risk. |
-| `05_Pricing_Curve_Comparison_Final.ipynb` | Compares five ways of converting risk into a fixed-fee share: severity-based isotonic, risk-only linear, logistic, quantile step and hard threshold. The comparison is fitted on training data using out-of-fold risk scores and evaluated on the hold-out sample. |
-| `04_Pricing_Model_Final.ipynb` | Applies the selected logistic pricing curve. It changes the fixed/variable mix while keeping GP the same at baseline commission, then applies the new terms to realised forward commission and compares the result with historical terms and a fully-variable alternative. |
+| `04_Pricing_Curve_Comparison_Final.ipynb` | Compares five ways of converting risk into a fixed-fee share: severity-based isotonic, risk-only linear, logistic, quantile step and hard threshold. The comparison is fitted on training data using out-of-fold risk scores and evaluated on the hold-out sample. |
+| `05_Pricing_Model_Final.ipynb` | Applies the selected logistic pricing curve. It changes the fixed/variable mix while keeping GP the same at baseline commission, then applies the new terms to realised forward commission and compares the result with historical terms and a fully-variable alternative. |
 
 ## Main findings
 
@@ -47,7 +45,7 @@ XGBoost has the highest single GP-F1 point estimate for the full feature set (**
 
 The severity work is mainly a negative result at individual-client level. The regressors show some relationship with future outcomes, but not enough to support an exact client-level severity forecast. The relationship is much clearer after grouping clients into risk bands. I use that as supporting evidence, but **individual severity prediction is not an input to the final pricing formula**.
 
-Notebook 05 then tests the pricing shape itself. The unrestricted logistic optimisation keeps becoming steeper and starts to behave like a hard threshold. The hard-threshold method gives the highest hold-out GP point estimate at **+4.26%**, but it is an all-or-nothing rule around one cutoff. I therefore use the constrained logistic curve as the final method. Its fitted parameters are:
+Notebook 04 then tests the pricing shape itself. The unrestricted logistic optimisation keeps becoming steeper and starts to behave like a hard threshold. The hard-threshold method gives the highest hold-out GP point estimate at **+4.26%**, but it is an all-or-nothing rule around one cutoff. I therefore use the constrained logistic curve as the final method. Its fitted parameters are:
 
 - midpoint: **0.51**
 - steepness: **30**
@@ -56,7 +54,7 @@ Notebook 05 then tests the pricing shape itself. The unrestricted logistic optim
 
 The hold-out sample is used to compare the pricing methods, so I treat this as a method-selection result rather than a completely untouched final test.
 
-The final backtest in Notebook 04 produces:
+The final backtest in Notebook 05 produces:
 
 - historical-terms GP: **€39.18m**
 - risk-based terms GP: **€40.67m**
@@ -111,8 +109,8 @@ To rebuild everything from the raw extracts:
 
 1. Run `01_Dataset_Creation_Final.ipynb` to create the processed modelling data.
 2. Run `02_Classification_Model_Final.ipynb` and `03_Severity_Model_Final.ipynb` for the modelling analysis.
-3. Run `05_Pricing_Curve_Comparison_Final.ipynb` to reproduce the pricing-method comparison.
-4. Run `04_Pricing_Model_Final.ipynb` for the final pricing backtest.
+3. Run `04_Pricing_Curve_Comparison_Final.ipynb` to reproduce the pricing-method comparison.
+4. Run `05_Pricing_Model_Final.ipynb` for the final pricing backtest.
 
 Once `processed/modelling_dataset_jan25.csv` exists, Notebooks 02 to 05 can be run separately.
 
