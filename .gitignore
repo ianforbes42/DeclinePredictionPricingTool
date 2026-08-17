@@ -4,28 +4,28 @@ __pycache__/
 *.pyc
 .ipynb_checkpoints/
 
-# Raw / confidential Awin data — never commit
+# Raw / confidential Awin data
 Data/
 Publisher.xlsx
 PublisherData/
 processed/
 
-# Internal Awin DB schema/query logic — not needed for the dissertation artefact
+# Internal  schema/query logic
 *.sql
 SQL Code/
 
-# Regenerable outputs — recreated by re-running the notebooks
-# (eda_outputs/ is tracked deliberately, same as outputs/ above)
+#  outputs not needed
+
 eda_jan25/
 
-# Superseded / working material — kept locally for audit trail, not part of the tracked deliverable
+# Superseded / working material
 Archive/
 Master files/
 Backups/
 
-# Awin confidential commercial material — must never enter the public dissertation repo
+# confidential commercial material 
 Reports and Slides/
 
-# OS clutter
+
 .DS_Store
 Thumbs.db
