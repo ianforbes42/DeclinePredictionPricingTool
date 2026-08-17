@@ -1,6 +1,6 @@
 method,train_gp_delta_pct,test_gp_delta_pct,test_ci_lo,test_ci_hi,test_decline_delta_pct,test_growth_delta_pct
 A_isotonic_severity,2.2878,2.4263,0.5638,4.203,13.0849,-2.5733
 B_risk_only_linear,0.308,1.0271,-1.1556,3.0537,17.1975,-7.2024
-C_optimised_logistic,4.2136,3.8161,0.9304,6.4775,16.8952,-2.1055
+C_constrained_logistic,4.2136,3.8161,0.9304,6.4775,16.8952,-2.1055
 D_quantile_step,3.9034,3.3221,0.879,5.708,18.2309,-3.6641
 E_hard_threshold,4.7119,4.2641,1.0049,7.2744,15.3332,-0.4773

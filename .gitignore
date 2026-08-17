@@ -15,13 +15,16 @@ processed/
 SQL Code/
 
 # Regenerable outputs — recreated by re-running the notebooks
-outputs/
-eda_outputs/
+# (eda_outputs/ is tracked deliberately, same as outputs/ above)
 eda_jan25/
 
 # Superseded / working material — kept locally for audit trail, not part of the tracked deliverable
 Archive/
 Master files/
+Backups/
+
+# Awin confidential commercial material — must never enter the public dissertation repo
+Reports and Slides/
 
 # OS clutter
 .DS_Store

@@ -1,0 +1,4 @@
+model,cv_mean_paired_delta,cv_delta_ci_lo,cv_delta_ci_hi,verdict
+logistic_l1,-0.0223,-0.0457,0.0012,no significant difference
+rf,0.0014,-0.0231,0.0227,no significant difference
+xgb,-0.0339,-0.0562,-0.008,ISCSL worse
